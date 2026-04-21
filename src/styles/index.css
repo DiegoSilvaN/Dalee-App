@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary: #6C63FF;
+    --primary-light: #8B85FF;
+    --bg: #FFFFFF;
+    --surface: #F8F7FF;
+    --text-1: #1A1A2E;
+    --text-2: #6B7280;
+    --border: #E5E7EB;
+    --success: #22C55E;
+    --warning: #F59E0B;
+    --danger: #EF4444;
+  }
+
+  .dark {
+    --primary: #8B85FF;
+    --primary-light: #A8A4FF;
+    --bg: #0D0D1A;
+    --surface: #16162A;
+    --text-1: #F0EFFF;
+    --text-2: #9490CC;
+    --border: #2A2850;
+    --success: #4ADE80;
+    --warning: #FBBF24;
+    --danger: #F87171;
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--text-1);
+    transition: background-color 0.3s, color 0.3s;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
